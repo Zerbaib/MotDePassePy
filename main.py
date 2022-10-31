@@ -8,7 +8,6 @@ while True:
         c = input("quelle est le mot de passe ?\n")
         list[b]=c
         
-        print(list)
     if a == "2":
         print("quelle mot de passe veux tu lire")
     
