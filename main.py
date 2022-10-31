@@ -9,5 +9,5 @@ while True:
         list[b]=c
         
     if a == "2":
-        print("quelle mot de passe veux tu lire")
-    
+        e = input("quelle mot de passe veux tu lire\n")
+        print("Ton mot de passe est:\n" + list.get(e)) 
