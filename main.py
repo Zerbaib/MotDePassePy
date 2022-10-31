@@ -2,6 +2,8 @@ list = []
 print("Bienvenue dans mon gestionnaire de mot de passe")
 
 while True:
-    print("que veux tu faire ?\n1. ajouter un mot de passe\n2. lire un mot de passe")
-    if input() = 1:
+    a = input("que veux tu faire ?\n1. ajouter un mot de passe\n2. lire un mot de passe\n")
+    if a == 1:
         print("yes")
+    else:
+        print("no")
