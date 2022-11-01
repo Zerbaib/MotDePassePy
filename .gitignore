@@ -28,6 +28,7 @@
 *.pidb
 *.svclog
 *.scc
+*.suo
 
 ipch/
 *.aps
