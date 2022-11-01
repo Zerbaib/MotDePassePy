@@ -4,15 +4,14 @@ def addMDP():
     site = input("quelle est le site ?\n")
     mdp = input("quelle est le mot de passe ?\n")
     list[site] = mdp
+    with open('listMDP.txt', 'w') as file:
+        list = json.load(list, file)
+    print("Mot de passe sauvegarder")
 
 def seeMDP():
     see = input("quelle mot de passe veux tu lire\n")
     print("Ton mot de passe est:\n" + list.get(see))
 
-def saveMDP():
-    with open('listMDP.txt', 'w') as file:
-        list = json.load(list, file)
-    print("Mot de passe sauvegarder")
 
 list = {}
 print("Bienvenue dans mon gestionnaire de mot de passe")
@@ -26,4 +25,6 @@ while True:
         seeMDP()
 
     if choix == "3":
-        saveMDP()
+        with open('listMDP.txt', 'w') as file:
+            list = json.load(list, file)
+        print("Mot de passe sauvegarder")
