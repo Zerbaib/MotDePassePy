@@ -26,6 +26,7 @@ def saveMDP():
 
 with open('listMDP.json', 'r') as file:
     list = json.load(file)
+
 print("Bienvenue dans mon gestionnaire de mot de passe")
 
 while True:
