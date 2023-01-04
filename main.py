@@ -18,10 +18,10 @@ def delMDP():
         print("le site du mot de passe n'est pas trouver")
 
 def saveMDP():
-    with open('listMDP.txt', 'w') as file:
+    with open('listMDP.json', 'w') as file:
         json.dump(list, file)
 
-with open('listMDP.txt', 'r') as file:
+with open('listMDP.json', 'r') as file:
     list = json.load(file)
 print("Bienvenue dans mon gestionnaire de mot de passe")
 
