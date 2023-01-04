@@ -7,7 +7,10 @@ def addMDP():
 
 def seeMDP():
     see = input("quelle mot de passe veux tu lire\n")
-    print("Ton mot de passe est:\n" + list.get(see))
+    if list.get(see) == None:
+        print("Se site existe pas\n")
+    else:
+        print("Ton mot de passe est:\n" + list.get(see))
 
 def delMDP():
     suppr = input("quelle mot de passe veux tu supprimer\n")
